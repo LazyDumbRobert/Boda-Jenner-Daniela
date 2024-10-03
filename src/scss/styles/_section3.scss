@@ -1,0 +1,153 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.datos{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+
+}
+
+.dato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    @include m.tablet{
+        width: auto;
+    }
+    width: 40rem;
+    box-shadow: 10px 7px 28px 1px rgba(0,0,0,0.47);
+    padding: 5rem;
+    &__texto{
+        font-size: 3rem;
+        @include m.tablet{
+            font-size: 5rem;
+        }
+        color: #3E5447;
+
+        &--textsm{
+            font-size: 2rem;
+            @include m.tablet{
+                font-size: 3.5rem;
+            }
+        }
+
+        &--bold{
+            font-weight: bold;
+        }
+    }
+    &__icon{
+        width: 10rem;
+        @include m.tablet{
+            width: 20rem;
+
+        }
+    }
+}
+
+.ubicacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+    gap: 1rem;
+    &__img{
+        max-width: 5rem;
+
+        @include m.tablet{
+            max-width: 10rem;
+        }
+    }
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    text-align: center;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 5rem;
+    width: 30rem;
+
+    &--checkbox{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__checkbox{
+        display: flex;
+        flex-direction: row;
+        gap: 1.3rem;
+    }
+
+    label{
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    input, textarea{
+        padding: 1rem;
+        border-color: #3E5447;
+        border-radius: 1rem;
+    }
+
+    textarea{
+        height: 25rem;
+    }
+}
+
+.checkbox{
+    transform: scale(2);
+    @include m.tablet{
+        margin-left: 3rem;
+    }
+}
+
+.formulario {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__form{
+        padding: 3rem;
+        border-radius: 3rem;
+        box-shadow: 10px 7px 28px 1px rgba(0,0,0,0.47);
+    }
+    
+}
+
+.despedida{
+    margin-top: 5rem;
+    font-size: 1.8rem;
+    @include m.tablet{
+        font-size: 3rem;
+    }
+}
+
+.btn{
+    background-color: palevioletred;
+    padding: 1rem;
+    margin-top: 1rem;
+    &:hover{
+        cursor: pointer;
+    }
+    border: none;
+    box-shadow: 10px 7px 28px 1px rgba(0,0,0,0.47);
+    border: 1px solid;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}

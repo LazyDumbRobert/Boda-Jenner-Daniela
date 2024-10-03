@@ -1,0 +1,62 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.nombres{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    @include m.tablet{
+        margin-top: 10rem;
+    }
+    height: 34rem;
+    @include m.tablet{
+        height: 55rem;
+    }
+
+
+    &__container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__texto{
+        text-align: center;
+        font-size: 5rem;
+        @include m.tablet{
+            font-size: 10rem;
+        }
+        color: #3E5447;
+        position: relative; 
+        z-index: 2; 
+
+        &--marcaAgua{
+            position: absolute; 
+            z-index: 1; 
+            opacity: 0.2; 
+            font-size: 20rem;
+            @include m.tablet{
+                font-size: 40rem;
+            }
+        }
+    }
+}
+
+.side2{
+    width:25rem;
+    height: 100%;
+    background-image: url('/build/img/side1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.side1{
+    width:25rem;
+    height: 100%;
+    background-image: url('/build/img/side2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

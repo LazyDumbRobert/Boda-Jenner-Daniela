@@ -1,0 +1,21 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.content{
+    margin-top: 5rem;
+    font-size: 2rem;
+    @include m.tablet{
+        font-size: 3rem;
+    }
+    text-align: center;
+    color: #3E5447;
+    &__text{
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__last{
+        margin-bottom: 5rem;
+    }
+}

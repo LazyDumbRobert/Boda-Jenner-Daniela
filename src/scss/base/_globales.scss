@@ -1,0 +1,38 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    overflow: auto;
+}
+html::-webkit-scrollbar{
+    display: none;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: "Literata", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8rem;
+    background-color: #EEE7DF;
+    overflow-y: hidden;
+    
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+p{
+    margin: 0;
+}
+
+.contenido_principal{
+}
