@@ -439,7 +439,7 @@ h3 {
 .side1 {
   width: 25rem;
   height: 100%;
-  background-image: url("/build/img/side2.png");
+  background-image: url("/build/img/side2.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
