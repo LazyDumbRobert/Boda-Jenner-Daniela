@@ -20,7 +20,18 @@
     <?php 
         include_once __DIR__ .'/templates/header.php';
     ?>  
-    <div class="contenido">
+    <section class="nombres">
+        <div class="side1"></div>
+        <div class="nombres__container">
+            <p class="nombres__texto nombres__texto--marcaAgua">
+                <img src="/build/img/logo.png" alt="Logo Boda">
+            </p>
+            <p class="nombres__texto">Jenner y Daniela</p>
+        </div>
+
+        <div class="side2"></div>
+    </section>
+    <div class="contenido" style="padding: 2rem;">
         <?php 
             echo $contenido;
         ?>

@@ -1,27 +1,18 @@
-<section class="nombres">
-    <div class="side1"></div>
-    <div class="nombres__container">
-        <p class="nombres__texto nombres__texto--marcaAgua">
-            <img src="/build/img/logo.png" alt="Logo Boda">
-        </p>
-        <p class="nombres__texto">Jenner y Daniela</p>
-    </div>
 
-    <div class="side2"></div>
-</section>
 
-<section class="content">
+<section class="content" style="margin-bottom: 2rem;">
     <div class="content__text">
         <p>Uno solo puede ser vencido, pero dos pueden resistir.</p>
         <p>¡La cuerda de tres hilos no se rompe facilmente!</p>
         <p>Ede 4:12</p>
     </div>
 
-    <audio id="audio" controls>
-    <source src="/uploads/background-sound.mp3" type="audio/mpeg">
-        Tu navegador no soporta el elemento de audio.
-    </audio>
-
+    <div>
+        <p style="margin-bottom: 2rem;">¡Escuchame!</p>
+        <audio id="audio" controls>
+            <source src="/uploads/background-sound.mp3" type="audio/mpeg">
+        </audio>
+    </div>
 </section>
 <section>
         <div class="content__image" >
@@ -30,8 +21,7 @@
             <img src="/build/img/img3.JPG" alt="Imagen Boda 3" data-aos="fade-up-right">
         </div>
     </section>
-<div class="contenido_principal">
-   
+<div class="contenido_principal" style="padding:2rem;">
     <section class="datos">
         <div class="cards">
             <div class="dato" data-aos="zoom-in-right">

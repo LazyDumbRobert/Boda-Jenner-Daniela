@@ -4,6 +4,9 @@
 .content{
     margin-top: 5rem;
     font-size: 2rem;
+    padding: 2.3rem;
+    border-radius: 1rem;
+    box-shadow: 10px 7px 28px 1px rgba(0,0,0,0.47);
     @include m.tablet{
         font-size: 3rem;
     }

@@ -448,6 +448,9 @@ h3 {
 .content {
   margin-top: 5rem;
   font-size: 2rem;
+  padding: 2.3rem;
+  border-radius: 1rem;
+  box-shadow: 10px 7px 28px 1px rgba(0, 0, 0, 0.47);
   text-align: center;
   color: #3E5447;
 }
@@ -466,12 +469,10 @@ h3 {
 }
 
 .datos {
-  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10rem;
 }
 
 .dato {
@@ -480,9 +481,9 @@ h3 {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  width: 40rem;
+  padding: 3rem;
+  width: 30rem;
   box-shadow: 10px 7px 28px 1px rgba(0, 0, 0, 0.47);
-  padding: 5rem;
 }
 @media (min-width: 768px) {
   .dato {

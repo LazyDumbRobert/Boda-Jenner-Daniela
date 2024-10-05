@@ -2,13 +2,10 @@
 @use 'base/mixins' as m;
 
 .datos{
-    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10rem;
-
 }
 
 .dato{
@@ -17,12 +14,12 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    padding: 3rem;
     @include m.tablet{
         width: auto;
     }
-    width: 40rem;
+    width: 30rem;
     box-shadow: 10px 7px 28px 1px rgba(0,0,0,0.47);
-    padding: 5rem;
     &__texto{
         font-size: 3rem;
         @include m.tablet{
