@@ -16,12 +16,18 @@
         <p>¡La cuerda de tres hilos no se rompe facilmente!</p>
         <p>Ede 4:12</p>
     </div>
+
+    <audio id="audio" controls>
+    <source src="/uploads/background-sound.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
 </section>
 <section>
         <div class="content__image" >
-            <img src="/build/img/img1.jpg" alt="Imagen Boda 1" data-aos="fade-down-right">
-            <img src="/build/img/img2.jpg" alt="Imagen Boda 2" data-aos="fade-down-left">
-            <img src="/build/img/img3.jpg" alt="Imagen Boda 3" data-aos="fade-up-right">
+            <img src="/build/img/img1.JPG" alt="Imagen Boda 1" data-aos="fade-down-right">
+            <img src="/build/img/img2.JPG" alt="Imagen Boda 2" data-aos="fade-down-left">
+            <img src="/build/img/img3.JPG" alt="Imagen Boda 3" data-aos="fade-up-right">
         </div>
     </section>
 <div class="contenido_principal">
@@ -69,9 +75,9 @@
         </div>
     </section>
 
-    <section class="formulario" data-aos="zoom-out-down">
+    <section class="formulario">
         <div>
-            <form class="formulario__form" id="formulario">
+            <form class="formulario__form" action="/api/registrar" method="POST" id="formulario">
 
                 <div class="campo">
                     <label for="invitado">Nombre del invitado:</label>
@@ -103,7 +109,7 @@
 
     <section class="content content__last" data-aos="zoom-out-up">
         <div class="content__image">
-            <img src="/build/img/img4.jpg" alt="Imagen Boda 3">
+            <img src="/build/img/img4.JPG" alt="Imagen Boda 3">
         </div>
         <div class="despedida">
             <p>¡Agradecidos con DIOS y contigo que nos acompañas en esta importante etapa!</p>

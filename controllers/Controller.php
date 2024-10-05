@@ -15,48 +15,45 @@ class Controller {
     {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // Acceder a los datos del formulario
-            $nombre_invitado = $_POST['nombre_invitado'] ?? null;
-            $departe_de = $_POST['departe_de'] ?? null;
-            $felicitacion = $_POST['felicitacion'] ?? null;
-    
-            // Procesar los datos
-            if ($nombre_invitado && $departe_de && $felicitacion) {
-                $filePath = dirname(__DIR__) . '/public/build/files/invitados.xlsx';
-              
-                // Cargar el archivo existente
-                $spreadsheet = IOFactory::load($filePath);
-                $sheet = $spreadsheet->getActiveSheet();
+            $nombre_invitado = $_POST['invitado'] ?? $_POST['nombre_invitado'];
+            $departe_de = $_POST['departe_de'];
+            $felicitacion = $_POST['felicitacion'];
+                // Procesar los datos
+                $filePath = '../public/uploads/invitados.xlsx';
+                try {
+                    // Cargar el archivo existente
+                    $spreadsheet = IOFactory::load($filePath);
+                    $sheet = $spreadsheet->getActiveSheet();
+                    // Obtener la última fila con datos
+                    $lastRow = $sheet->getHighestRow() + 1; // Obtiene la siguiente fila disponible
 
-                // Obtener la última fila con datos
-                $lastRow = $sheet->getHighestRow() + 1; // Obtiene la siguiente fila disponible
+                    // Agregar los nuevos datos
+                    $sheet->setCellValue('A' . $lastRow, $nombre_invitado);
+                    $sheet->setCellValue('B' . $lastRow, ($departe_de == 1) ? 'Novio' : 'Novia');
+                    $sheet->setCellValue('C' . $lastRow, $felicitacion);
 
-                // Agregar los nuevos datos
-                $sheet->setCellValue('A' . $lastRow, $nombre_invitado);
-                $sheet->setCellValue('B' . $lastRow, ($departe_de == 1) ? 'Novio' : 'Novia');
-                $sheet->setCellValue('C' . $lastRow, $felicitacion);
+                    // Guardar el archivo
+                    $writer = new Xlsx($spreadsheet);
+                    $writer->save($filePath);
 
-                // Guardar el archivo
-                $writer = new Xlsx($spreadsheet);
-                $writer->save($filePath);
-
-                $response = [
-                    'success' => 200,
-                    'message' => 'Gracias por confirmar su asistencia!'
-                ];
-            } else {
-                //retonar error si no existen datos
-                $response = [
-                    'success' => 400,
-                    'message' => 'Ingresa datos para poder confirmar tu asistencia'
-                ];
+                    $response = [
+                        'success' => 200,
+                        'message' => 'Tu asistencia se registró, gracias!'
+                    ];
+                } catch (\Throwable $e) {
+                    $response = [
+                        'success' => 400,
+                        'message' => $e->getMessage()
+                    ];
+                    echo json_encode($response);
+                }
+               
+                echo json_encode($response);
             }
-    
-            echo json_encode($response);
-        }
     }
 
     public static function documento(){
-        $filePath = dirname(__DIR__) . '/public/build/files/invitados.xlsx';
+        $filePath = '../public/uploads/invitados.xlsx';
         if (file_exists($filePath)) {
             header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
             header('Content-Disposition: attachment; filename="invitados.xlsx"');
