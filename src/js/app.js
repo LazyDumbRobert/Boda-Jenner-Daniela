@@ -1,10 +1,3 @@
-document.addEventListener('click', function() {
-    var audio = document.getElementById("audio");
-    audio.play().catch(function(error) {
-        console.log("Error al reproducir el audio:", error);
-    });
-});
-
 const formulario = document.getElementById('formulario');
 formulario.addEventListener('submit',function(e){
     e.preventDefault();
@@ -26,6 +19,7 @@ async function registrarAsistente() {
     data.append('felicitacion', felicitacion);
     data.append('numero_invitados', numero_invitados);
 
+    console.log(numero_invitados);
     fetch(url, {
         method: 'POST',
         body: data // Enviar el FormData directamente
