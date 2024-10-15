@@ -27,7 +27,7 @@
             <p class="nombres__texto nombres__texto--marcaAgua">
                 <img src="/build/img/logo.png" alt="Logo Boda">
             </p>
-            <p class="nombres__texto elegant_font">Jenner y Daniela</p>
+            <p class="nombres__texto elegant_font" style="margin-top: 10px;">Jenner y Daniela</p>
         </div>
 
         <div class="side2"></div>
