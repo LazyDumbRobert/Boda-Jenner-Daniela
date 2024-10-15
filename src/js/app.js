@@ -16,6 +16,7 @@ async function registrarAsistente() {
     const nombre_invitado = document.getElementById('invitado').value;
     const departe_de = document.getElementById('departe_de').value;
     const felicitacion = document.getElementById('felicitacion').value;
+    const numero_invitados = document.getElementById('numero_invitados').value;
 
     // Instanciar correctamente el FormData
     const data = new FormData();
@@ -23,6 +24,7 @@ async function registrarAsistente() {
     data.append('nombre_invitado', nombre_invitado);
     data.append('departe_de', departe_de);
     data.append('felicitacion', felicitacion);
+    data.append('numero_invitados', numero_invitados);
 
     fetch(url, {
         method: 'POST',
