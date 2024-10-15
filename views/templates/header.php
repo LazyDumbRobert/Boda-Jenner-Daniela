@@ -4,6 +4,6 @@
 
     <div class="header__texto">
         <p>NUESTRA BODA</p>
-        <p>23|NOVIEMBRE|2024</p>
+        <p style="font-size:27.5px;">23|NOVIEMBRE|2024</p>
     </div>
 </header>

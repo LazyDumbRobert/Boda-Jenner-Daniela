@@ -1,10 +1,8 @@
-
-
 <section class="content" style="margin-bottom: 2rem;">
     <div class="content__text">
         <p>Uno solo puede ser vencido, pero dos pueden resistir.</p>
         <p>¡La cuerda de tres hilos no se rompe facilmente!</p>
-        <p>Ede 4:12</p>
+        <p style="">Ede 4:12</p>
     </div>
 
     <div>
