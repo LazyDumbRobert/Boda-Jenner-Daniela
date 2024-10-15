@@ -2,7 +2,7 @@
     <div class="content__text">
         <p>Uno solo puede ser vencido, pero dos pueden resistir.</p>
         <p>¡La cuerda de tres hilos no se rompe facilmente!</p>
-        <p style="">Ede 4:12</p>
+        <p>Ecle 4:12</p>
     </div>
 
     <div>
@@ -23,41 +23,51 @@
     <section class="datos">
         <div class="cards">
             <div class="dato" data-aos="zoom-in-right">
-                <p class="dato__texto">CEREMONIA</p>
+                <p class="dato__texto title_font">CEREMONIA</p>
                 <img class="dato__icon" src="/build/img/ceremonia.png" alt="Image Wedding">
                 <p class="dato__texto dato__texto--bold">Club Baika</p>
                 <p class="dato__texto">3:30 PM</p>
                 <div class="ubicacion">
-                    <img class="ubicacion__img" src="/build/img/maps.png.png" alt="Maps Icon">
-                    <a class="dato__texto" href="https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUqDQgBEC4YrwEYxwEYgAQyCggAEAAY4wIYgAQyDQgBEC4YrwEYxwEYgAQyCAgCEAAYFhgeMggIAxAAGBYYHjIICAQQABgWGB4yCAgFEAAYFhgeMggIBhAAGBYYHjIICAcQABgWGB4yCggIEAAYgAQYogQyCggJEAAYgAQYogTSAQg0ODY4ajFqN6gCALACAA&um=1&ie=UTF-8&fb=1&gl=gt&sa=X&geocode=KRPLCP4ybYmFMXI19Vqpab_F&daddr=2+Avenida+11-104,+Chimaltenango" target="_blank">
-                        Ubicación
-                    </a>
+                    <div class="ubicacion__container">
+                        <img class="ubicacion__img" src="/build/img/maps.png.png" alt="Maps Icon">
+                        <a class="dato__texto dato__texto--ubicacion" href="https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUqDQgBEC4YrwEYxwEYgAQyCggAEAAY4wIYgAQyDQgBEC4YrwEYxwEYgAQyCAgCEAAYFhgeMggIAxAAGBYYHjIICAQQABgWGB4yCAgFEAAYFhgeMggIBhAAGBYYHjIICAcQABgWGB4yCggIEAAYgAQYogQyCggJEAAYgAQYogTSAQg0ODY4ajFqN6gCALACAA&um=1&ie=UTF-8&fb=1&gl=gt&sa=X&geocode=KRPLCP4ybYmFMXI19Vqpab_F&daddr=2+Avenida+11-104,+Chimaltenango" target="_blank">
+                            Ubicación
+                        </a>
+                    </div>
+
+                    <div >
+                        <i class="fa-regular fa-hand-point-up icon_awsome"></i>
+                        <p class="icon_awsome--text">Haz click aquí para ver la ubicación</p>
+                    </div>
+
+
                 </div>
                 <p class="dato__texto dato__texto--textsm">Tu puntualidad es un obsequio maravilloso</p>
             </div>
 
             <div class="dato" data-aos="zoom-out-up">
-                <p class="dato__texto">CELEBRACIÓN</p>
+                <p class="dato__texto title_font">CELEBRACIÓN</p>
                 <img class="dato__icon" src="/build/img/plates.png" alt="Image Wedding">
                 <p class="dato__texto dato__texto--bold">Club Baika</p>
-                <p class="dato__texto">5:30 PM</p>
+                <p class="dato__texto">3:30 PM</p>
             </div>
 
             <div class="dato" data-aos="zoom-out-down">
-                <p class="dato__texto">CELEBRACIÓN</p>
+                <p class="dato__texto title_font">REGALOS</p>
                 <img class="dato__icon" src="/build/img/regalo.png" alt="Image Wedding">
-                <p class="dato__texto dato__texto--textsm">Estamos emocionados de contar con tu presencia ya que es un regalo en si. Pero si estas considerando un obsequio te sugerimos pueda ser de forma monetaria, esto nos ayudará a iniciar nuestra vida jutnos, por ello muy agradecidos.</p>
+                <p class="dato__texto dato__texto--textsm">Estamos emocionados de contar con tu presencia ya que es un regalo en si. Pero si estas considerando un obsequio te sugerimos pueda ser en efectivo, esto nos ayudará a iniciar nuestra vida juntos, por ello muy agradecidos.</p>
                 <br>
                 <br>
                 <p class="dato__texto dato__texto--textsm">Habrán sobres en el ingreso del evento para que puedas bendecirnos.</p>
             </div>
 
             <div class="dato" data-aos="zoom-out-left">
-                <p class="dato__texto">VESTIMENTA</p>
-                <div style="display: flex; flex-direction:row; padding:2rem;"> 
-                    <img class="dato__icon" src="/build/img/vestimenta.png" alt="Image Wedding">
+                <p class="dato__texto title_font">VESTIMENTA</p>
+                <div style="display: flex; flex-direction:row;"> 
+                    <img class="dato__icon dato__icon--vestimenta" src="/build/img/vestimenta.png" alt="Image Wedding">
                 </div>
-                <p class="dato__texto dato__texto--textsm">El blanco es un color hermoso, pero en nuestra boda es exclusivo para la NOVIA.</p>
+                <p class="dato__texto dato__texto--textsm">Formal</p>
+                <p class="dato__texto dato__texto--textsm">Evita el color blanco.</p>
                 <p class="dato__texto dato__texto--textsm">Todos los demás colores están disponibles</p>
             </div>
         </div>
@@ -66,10 +76,14 @@
     <section class="formulario">
         <div>
             <form class="formulario__form" action="/api/registrar" method="POST" id="formulario">
-
                 <div class="campo">
                     <label for="invitado">Nombre del invitado:</label>
-                    <input type="text" name="invitado" placeholder="Nombre del invitado" id="invitado">
+                    <input type="text" name="invitado" placeholder="Nombre del invitado" id="invitado" autocomplete="off">
+                </div>
+
+                <div class="campo">
+                    <label for="numero_invitados">Número de invitados que asistirán:</label>
+                    <input type="number" name="numero_invitados" placeholder="Número de invitados" id="numero_invitados" autocomplete="off">
                 </div>
 
                 <div class="campo">

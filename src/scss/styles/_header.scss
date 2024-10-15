@@ -25,5 +25,12 @@
             font-size: 10rem;
 
         }
+
+        &--fecha{
+            @include m.tablet{
+                font-size: 7.7rem;
+            }
+            font-size: 27.7px;
+        }
     }
 }

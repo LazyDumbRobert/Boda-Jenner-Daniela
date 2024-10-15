@@ -13,7 +13,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     padding: 3rem;
     @include m.tablet{
         width: auto;
@@ -24,6 +24,12 @@
         font-size: 3rem;
         @include m.tablet{
             font-size: 5rem;
+        }
+        &--ubicacion{
+            font-size: 2rem;
+            @include m.tablet{
+                font-size: 5rem;
+            }
         }
         color: #3E5447;
 
@@ -44,23 +50,32 @@
             width: 20rem;
 
         }
+
+        &--vestimenta{
+            width: 15rem;
+        }
     }
 }
 
 .ubicacion{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 2.5rem;
     margin-top: 2.5rem;
     gap: 1rem;
+    font-size: 10px;
     &__img{
-        max-width: 5rem;
-
+        max-width: 2.5rem;
         @include m.tablet{
-            max-width: 10rem;
+            max-width: 5rem;
         }
+    }
+
+    &__container{
+        display: flex;
+        flex-direction: row;
     }
 }
 
@@ -134,7 +149,7 @@
 }
 
 .btn{
-    background-color: palevioletred;
+    background-color: #7D9887;
     padding: 1rem;
     margin-top: 1rem;
     &:hover{
@@ -147,4 +162,20 @@
     display: flex;
     justify-content: flex-end;
     width: 100%;
+}
+
+
+.icon_awsome{
+    font-size: 1.7rem;
+
+    @include m.tablet{
+        font-size: 5rem;  
+    }
+
+    &--text{
+        font-size: 1.7rem;
+        @include m.tablet{
+            font-size: 2.5rem; 
+        }
+    }
 }

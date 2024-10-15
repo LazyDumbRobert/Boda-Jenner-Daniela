@@ -1,0 +1,38 @@
+$font-name: 'elegant';
+$font-name2: 'textos';
+$font-name3: 'titulos';
+
+@font-face {
+  font-family: $font-name;
+  src: url("/uploads/tituloFont.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: $font-name2;
+    src: url("/uploads/textos.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: $font-name3;
+    src: url("/uploads/titulos.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+.elegant_font {
+  font-family: $font-name, sans-serif;
+}
+
+.text_font {
+    font-family: $font-name2, sans-serif;
+  }
+  
+  .title_font {
+    font-family: $font-name3, sans-serif;
+  }
+  

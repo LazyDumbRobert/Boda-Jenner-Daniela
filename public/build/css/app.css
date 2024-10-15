@@ -354,6 +354,36 @@ h3 {
   text-align: center;
 }
 
+@font-face {
+  font-family: "elegant";
+  src: url("/uploads/tituloFont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "textos";
+  src: url("/uploads/textos.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "titulos";
+  src: url("/uploads/titulos.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.elegant_font {
+  font-family: "elegant", sans-serif;
+}
+
+.text_font {
+  font-family: "textos", sans-serif;
+}
+
+.title_font {
+  font-family: "titulos", sans-serif;
+}
+
 .header {
   text-align: center;
 }
@@ -378,6 +408,14 @@ h3 {
 @media (min-width: 768px) {
   .header__texto {
     font-size: 10rem;
+  }
+}
+.header__texto--fecha {
+  font-size: 27.7px;
+}
+@media (min-width: 768px) {
+  .header__texto--fecha {
+    font-size: 7.7rem;
   }
 }
 
@@ -480,7 +518,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   padding: 3rem;
   width: 30rem;
   box-shadow: 10px 7px 28px 1px rgba(0, 0, 0, 0.47);
@@ -496,6 +534,14 @@ h3 {
 }
 @media (min-width: 768px) {
   .dato__texto {
+    font-size: 5rem;
+  }
+}
+.dato__texto--ubicacion {
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .dato__texto--ubicacion {
     font-size: 5rem;
   }
 }
@@ -518,23 +564,31 @@ h3 {
     width: 20rem;
   }
 }
+.dato__icon--vestimenta {
+  width: 15rem;
+}
 
 .ubicacion {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 2.5rem;
   margin-top: 2.5rem;
   gap: 1rem;
+  font-size: 10px;
 }
 .ubicacion__img {
-  max-width: 5rem;
+  max-width: 2.5rem;
 }
 @media (min-width: 768px) {
   .ubicacion__img {
-    max-width: 10rem;
+    max-width: 5rem;
   }
+}
+.ubicacion__container {
+  display: flex;
+  flex-direction: row;
 }
 
 .cards {
@@ -605,7 +659,7 @@ h3 {
 }
 
 .btn {
-  background-color: palevioletred;
+  background-color: #7D9887;
   padding: 1rem;
   margin-top: 1rem;
   border: none;
@@ -618,5 +672,22 @@ h3 {
 }
 .btn:hover {
   cursor: pointer;
+}
+
+.icon_awsome {
+  font-size: 1.7rem;
+}
+@media (min-width: 768px) {
+  .icon_awsome {
+    font-size: 5rem;
+  }
+}
+.icon_awsome--text {
+  font-size: 1.7rem;
+}
+@media (min-width: 768px) {
+  .icon_awsome--text {
+    font-size: 2.5rem;
+  }
 }
 /*# sourceMappingURL=app.css.map */

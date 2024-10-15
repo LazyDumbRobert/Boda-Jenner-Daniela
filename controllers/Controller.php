@@ -18,6 +18,7 @@ class Controller {
             $nombre_invitado = $_POST['invitado'] ?? $_POST['nombre_invitado'];
             $departe_de = $_POST['departe_de'];
             $felicitacion = $_POST['felicitacion'];
+            $numero_invitados = $_POST['numero_invitados'];
                 // Procesar los datos
                 $filePath = '../public/uploads/invitados.xlsx';
                 try {
@@ -30,7 +31,8 @@ class Controller {
                     // Agregar los nuevos datos
                     $sheet->setCellValue('A' . $lastRow, $nombre_invitado);
                     $sheet->setCellValue('B' . $lastRow, ($departe_de == 1) ? 'Novio' : 'Novia');
-                    $sheet->setCellValue('C' . $lastRow, $felicitacion);
+                    $sheet->setCellValue('C' . $lastRow, $numero_invitados);
+                    $sheet->setCellValue('D' . $lastRow, $felicitacion);
 
                     // Guardar el archivo
                     $writer = new Xlsx($spreadsheet);
