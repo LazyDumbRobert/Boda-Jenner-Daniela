@@ -20,7 +20,7 @@
 
     &__texto{
         color: #3E5447;
-        font-size: 3.5rem;
+        font-size: 4.5rem;
         @include m.tablet{
             font-size: 10rem;
 
@@ -30,7 +30,7 @@
             @include m.tablet{
                 font-size: 7.7rem;
             }
-            font-size: 27.7px;
+            font-size: 35.7px;
         }
     }
 }

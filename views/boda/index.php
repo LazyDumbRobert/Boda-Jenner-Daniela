@@ -49,7 +49,7 @@
                 <p class="dato__texto title_font">CELEBRACIÓN</p>
                 <img class="dato__icon" src="/build/img/plates.png" alt="Image Wedding">
                 <p class="dato__texto dato__texto--bold">Club Baika</p>
-                <p class="dato__texto">3:30 PM</p>
+                <p class="dato__texto">5:30 PM</p>
             </div>
 
             <div class="dato" data-aos="zoom-out-down">
@@ -66,7 +66,7 @@
                 <div style="display: flex; flex-direction:row;"> 
                     <img class="dato__icon dato__icon--vestimenta" src="/build/img/vestimenta.png" alt="Image Wedding">
                 </div>
-                <p class="dato__texto dato__texto--textsm">Formal</p>
+                <p class="dato__texto dato__texto--bold dato__texto--textsm ">Formal</p>
                 <p class="dato__texto dato__texto--textsm">Evita el color blanco.</p>
                 <p class="dato__texto dato__texto--textsm">Todos los demás colores están disponibles</p>
             </div>
@@ -82,7 +82,7 @@
                 </div>
 
                 <div class="campo">
-                    <label for="numero_invitados">Número de invitados que asistirán:</label>
+                    <label for="numero_invitados">Número de invitados según invitación:</label>
                     <input type="number" name="numero_invitados" placeholder="Número de invitados" id="numero_invitados" autocomplete="off">
                 </div>
 
