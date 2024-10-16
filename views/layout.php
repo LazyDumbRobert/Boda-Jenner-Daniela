@@ -29,7 +29,7 @@
             </p>
 
             <div class="nombres__container">
-                <p class="nombres__texto elegant_font">Jenner</p>
+                <p class="nombres__texto elegant_font nombres__texto--first">Jenner</p>
                 <p class="nombres__texto elegant_font" style="margin-left: 76px; margin-bottom: 30px;">y</p>
                 <p class="nombres__texto elegant_font">Daniela</p>
             </div>
