@@ -31,13 +31,13 @@
             </p>
 
             <div class="nombres__container">
-            <p class="nombres__texto elegant_font">
+            <p class="nombres__texto parisienne-regular">
                     <span style="position: absolute; left: -9999px;">J</span>Jenner
                 </p>
-                <p class="nombres__texto elegant_font">
+                <p class="nombres__texto parisienne-regular">
                     <span style="position: absolute; left: -9999px;">y</span>y
                 </p>
-                <p class="nombres__texto elegant_font">Daniela</p>
+                <p class="nombres__texto parisienne-regular">Daniela</p>
             </div>
         </div>
 
