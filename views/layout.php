@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/build/css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -29,9 +31,9 @@
             </p>
 
             <div class="nombres__container">
-                <p class="nombres__texto elegant_font nombres__texto--first">Jenner</p>
-                <p class="nombres__texto elegant_font" style="margin-left: 76px; margin-bottom: 30px;">y</p>
-                <p class="nombres__texto elegant_font">Daniela</p>
+                <p class="nombres__texto parisienne-regular nombres__texto--first">Jenner</p>
+                <p class="nombres__texto parisienne-regular" style="margin-left: 76px; margin-bottom: 30px;">y</p>
+                <p class="nombres__texto parisienne-regular">Daniela</p>
             </div>
         </div>
 
