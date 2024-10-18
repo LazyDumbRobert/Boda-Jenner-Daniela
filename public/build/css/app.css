@@ -430,12 +430,8 @@ h3 {
 .nombres {
   display: flex;
   justify-content: space-between;
-  height: 40rem;
-}
-@media (min-width: 768px) {
-  .nombres {
-    margin-top: 10rem;
-  }
+  margin-top: 10rem;
+  height: 30rem;
 }
 @media (min-width: 768px) {
   .nombres {
@@ -455,7 +451,7 @@ h3 {
 }
 .nombres__texto {
   text-align: center;
-  font-size: 7.5rem;
+  font-size: 5.5rem;
   color: #3E5447;
   position: relative;
   z-index: 2;
@@ -478,7 +474,7 @@ h3 {
 }
 
 .side2 {
-  width: 25rem;
+  width: 7rem;
   height: 100%;
   background-image: url("/build/img/side1.png");
   background-size: cover;
@@ -487,7 +483,7 @@ h3 {
 }
 
 .side1 {
-  width: 25rem;
+  width: 7rem;
   height: 100%;
   background-image: url("/build/img/side2.webp");
   background-size: cover;

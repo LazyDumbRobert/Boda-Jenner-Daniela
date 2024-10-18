@@ -5,10 +5,9 @@
 .nombres{
     display: flex;
     justify-content: space-between;
-    @include m.tablet{
-        margin-top: 10rem;
-    }
-    height: 40rem;
+    margin-top: 10rem;
+    height: 30rem;
+
     @include m.tablet{
         height: 55rem;
     }
@@ -26,7 +25,7 @@
     }
     &__texto{
         text-align: center;
-        font-size: 7.5rem;
+        font-size: 5.5rem;
         @include m.tablet{
             font-size: 10rem;
         }
@@ -47,7 +46,7 @@
 }
 
 .side2{
-    width:25rem;
+    width:7rem;
     height: 100%;
     background-image: url('/build/img/side1.png');
     background-size: cover;
@@ -56,7 +55,7 @@
 }
 
 .side1{
-    width:25rem;
+    width:7rem;
     height: 100%;
     background-image: url('/build/img/side2.webp');
     background-size: cover;
