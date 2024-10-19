@@ -392,6 +392,12 @@ h3 {
   font-style: normal;
 }
 
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .header {
   text-align: center;
 }
