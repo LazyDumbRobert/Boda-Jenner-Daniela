@@ -115,7 +115,7 @@
         </div>
         <div class="despedida">
             <p>¡Agradecidos con DIOS y contigo que nos acompañas en esta importante etapa!</p>
-            <p>Guarda este recuerdo tomandote muchas fotos con nostros.</p>
+            <p>Guarda este recuerdo tomandote muchas fotos con nosotros.</p>
         </div>
     </section>
 </div>
