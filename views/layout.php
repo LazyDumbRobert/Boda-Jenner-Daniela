@@ -32,7 +32,9 @@
             </p>
 
             <div class="nombres__container">
-                <p class="nombres__texto great-vibes-regular">Jenner</p>
+                <p class="nombres__texto great-vibes-regular">
+                    <span style="position: absolute; left: -9999px;">J</span>Jenner
+                </p>
                 <p class="nombres__texto nombres__texto--separador great-vibes-regular">Y</p>
                 <p class="nombres__texto great-vibes-regular">Daniela</p>
 <!-- 
